@@ -1,0 +1,34 @@
+/* Don't worry about this stuff */
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Monoton);
+@import url(http://fonts.googleapis.com/css?family=Chewy);
+@import url(http://fonts.googleapis.com/css?family=Boogaloo);
+@import url(http://fonts.googleapis.com/css?family=Playball);
+@import url(http://fonts.googleapis.com/css?family=Calligraffitti);
+@import url(http://fonts.googleapis.com/css?family=Audiowide);
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+	width: 60%;
+	background-color: white;
+	min-height: 100%;
+	margin: 0 auto -30px;
+}
+header,main{
+	padding:20px;
+}
+footer, .push {
+	height: 30px;
+}
+footer {
+	width: 60%;
+	background-color: white;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* Your customizations under here */

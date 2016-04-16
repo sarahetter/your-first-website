@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Your First Website</title>
+
+		<meta name="description" content="Workshop to learn web development">
+		<meta name="author" content="Sarah Etter">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Your First Website</h1>
+					<p>
+						<small>Created by <a href="http://sarahetter.com">Sarah Etter</a> / <a href="http://twitter.com/sarahetter_">@SarahEtter_</a></small>
+					</p>
+				</section>
+                <section>
+                    <h2>Who Am I?</h2>
+                    <h3>Sarah Etter</h3>
+                    <ul>
+                        <li>Web Developer at Territorial</li>
+                        <li>When I started making websites</li>
+                        <li>Why I love what I do</li>
+                        <li>sarah@sarahetter.com</li>
+                        <li>@SarahEtter_</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>What is HTML?</h2>
+                    <ul>
+                        <li>Stands for HyperText Markup Language</li>
+                        <li>Language that a browser understands to display webpages</li>
+                        <li>Consists of different tags</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>HTML Tag</h2>
+                    <ul>
+                        <li>A tag describes its contents</li>
+                        <li>Tags come in pairs. They have a opening tag, and a closing tag</li>
+                        <li><strong>&lt;tag&gt;</strong> Whatever the tag describes <strong>&lt;/tag&gt;</strong></li>
+                    </ul>
+	  <pre><code class="hljs html"><h1>I Am A Heading</h1>
+<p>I am a paragraph, seriously. I am telling you all sorts of things.</p></code></pre>
+                </section>
+                <section>
+                    <h2>Simple HTML page</h2>
+	  	  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;&lt;/head&gt;
+    &lt;body&gt;&lt;/body&gt;
+&lt;/html></code></pre>
+                </section>
+                <section>
+                    <h2>Title</h2>
+                    <ul>
+                        <li>The title is what shows up at the top of the browser window and in search results.</li>
+                    </ul>
+	<pre>
+<code class="hljs html">&lt;head&gt;
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Your Website Title Here</title>
+&lt;/head&gt;
+</code></pre>
+                </section>
+                <section>
+                    <h2>Header and Headings</h2>
+                    <ul>
+                        <li>Header is an HTML5 tag to hold stuff that goes at the head of a page</li>
+                        <li>H1 and H2 are heading tags, which hold the document's headings</li>
+                    </ul>
+	  	<pre><code class="hljs html"><header>
+    <h1>Your Website Heading Here</h1>
+    <h2>A spectacular site</h2>
+</header>
+</code></pre>
+                </section>
+                <section>
+                    <h2>Main</h2>
+                    <ul>
+                        <li>Main is an HTML5 tag to hold stuff that is considered the main content of a page</li>
+                        <li>P is a tag that contains a paragraph</li>
+                    </ul>
+		<pre><code class="hljs html"><main>
+    <p>This is a paragraph</p>
+</main>
+</code></pre>
+                </section>
+                <section>
+                    <h2>Footer</h2>
+                    <ul>
+                        <li>Footer is an HTML5 tag to hold stuff that is in the footer of a page</li>
+                    </ul>
+		<pre><code class="hljs html"><footer>
+© Your Name Here, 2015
+</footer>
+</code></pre>
+                </section>
+                <section>
+                    <h2>Lists</h2>
+                    <ul>
+                        <li>Lets put a list in the &lt;main&gt; section</li>
+                        <li>Lists have a surrounding tag that lets the browser know it's a list (ul or ol tags)</li>
+                        <li>Each list item has a tag to let the browser know it's a list item (li tag)</li>
+                    </ul>
+		<pre><code class="hljs html"><h1>Favourite Music</h1>
+<ul>
+  <li>Beyonce</li>
+  <li>Sleater Kinney</li>
+  <li>Taylor Swift</li>
+  <li>Radiohead</li>
+</ul>
+</code></pre>
+                </section>
+                <section>
+                    <h2>Links</h2>
+                    <ul>
+                        <li>Link tags, or anchor tags, are different. They have an attribute to let the browser know where to link.</li>
+                    </ul>
+		<pre><code class="hljs html"><a href="http://xkcd.com">Best Online Comic</a></code></pre>
+                    <ul>
+                        <li>This is displayed as:</li>
+                    </ul>
+                    <a href="http://xkcd.com" class="regularlink">Best Online Comic</a>
+                </section>
+                <section>
+                    <h2>Images</h2>
+                    <ul>
+                        <li>Image tags have an attribute and they are self closing.</li>
+                        <li>I have added a bunch of .gifs for you to try out! 1.gif -> 15.gif</li>
+                    </ul>
+		<pre><code class="hljs html"><img src="images/11.gif" /></code></pre>
+                    <ul>
+                        <li>This is displayed as:</li>
+                    </ul>
+                    <img src="images/11.gif" />
+                </section>
+
+                <section>
+                    <h2>What is CSS?</h2>
+                    <ul>
+                        <li>Stands for Cascading Style Sheets</li>
+                        <li>It is where we add style to our webpage</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>CSS Syntax</h2>
+		<pre><code class="hljs css">h1 {
+    color: purple;
+    font-size: 32px;
+}
+</code></pre>
+                </section>
+                <section>
+                    <h2>Adding Stylesheets</h2>
+                    <ul>
+                        <li>Add the following blue code in the &lt;head&gt; section, then go and check your website.</li>
+                    </ul>
+		<pre><code class="hljs html">&lt;head&gt;
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Your Website Title Here</title>
+    &lt;link rel="stylesheet" href="css/normalize.css"&gt;
+    &lt;link rel="stylesheet" href="css/mystyle.css"&gt;
+&lt;/head&gt;
+</code></pre>
+                </section>
+                <section>
+                    <h2>Colours</h2>
+                    <ul>
+                        <li>You can change colours with css</li>
+                        <li>In css, colour is spelled the American way, "color"</li>
+                    </ul>
+<pre><code class="hljs css">body {
+    background-color: orchid;
+}
+header {
+    color: steelblue;
+    background-color: lightsalmon;
+}
+</code></pre>
+                </section>
+                <section>
+                    <h2>Fonts</h2>
+                    <ul>
+                        <li>You can customize the text to your liking</li>
+                        <li>You can change the size, font, boldness, italics, etc.</li>
+                    </ul>
+<pre>
+<code>h1 {
+    font-size: 50px;
+    font-family: 'Pacifico';
+}
+h2 {
+    font-family: 'Chewy';
+}
+</code></pre>
+                    <h5>Try any of the following font-families:</h5>
+                    <ul class="fonts">
+                        <li class="calligraffitti">Calligraffitti</li>
+                        <li class="monoton">Monoton</li>
+                        <li class="playball">Playball</li>
+                        <li class="pacifico">Pacifico</li>
+                        <li class="chewy">Chewy</li>
+                        <li class="audiowide">Audiowide</li>
+                        <li class="boogaloo">Boogaloo</li>
+                        <li class="impact">Impact</li>
+                        <li class="courier">Courier</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Positioning</h2>
+                    <ul>
+                        <li>There are lots of ways to position things in css</li>
+                        <li>We will use float and margin.</li>
+<pre>
+<code>img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+</code></pre>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Background Images</h2>
+<pre>
+<code>header {
+    color: steelblue;
+    background-color: lightsalmon;
+    background-image: url('../images/Elegant_Background-6.jpg');
+}
+</code></pre>
+                </section>
+                <section>
+                    <h2>Questions?</h2>
+                    <p>sarah@sarahetter.com</p>
+                </section>
+
+
+
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
